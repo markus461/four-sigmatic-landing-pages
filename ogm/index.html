@@ -12,6 +12,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PKF9ZMB');</script>
 <!-- End Google Tag Manager -->
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1161100685848846');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1161100685848846&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Fraunces:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 <style>
@@ -2395,7 +2407,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <a href="https://us.foursigmatic.com/9dPRr4" class="btn-hero" id="buybox-cta" style="margin-top:16px;">
+    <a href="https://us.foursigmatic.com/9dPRr4" class="btn-hero" id="buybox-cta" style="margin-top:16px;" onclick="fbq('track','InitiateCheckout')">
       Subscribe &amp; Claim Free Gifts — $25
     </a>
 
@@ -3309,13 +3321,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="sticky-nav-sep">•</span>
       <span>300M+ cups served</span>
     </div>
-    <a href="https://us.foursigmatic.com/9dPRr4" class="sticky-nav-cta">Subscribe &amp; Claim Free Gifts — $25</a>
+    <a href="https://us.foursigmatic.com/9dPRr4" class="sticky-nav-cta" onclick="fbq('track','InitiateCheckout')">Subscribe &amp; Claim Free Gifts — $25</a>
   </div>
 </div>
 
 <!-- Mobile sticky CTA (bottom) -->
 <div class="mobile-cta" id="mobileCta">
-  <a href="https://us.foursigmatic.com/9dPRr4" class="mobile-cta-btn">Subscribe &amp; Claim Free Gifts — $25</a>
+  <a href="https://us.foursigmatic.com/9dPRr4" class="mobile-cta-btn" onclick="fbq('track','InitiateCheckout')">Subscribe &amp; Claim Free Gifts — $25</a>
   <div class="mobile-cta-social">
     <span class="mobile-cta-stars">★★★★★</span>
     <span>4.8</span>
@@ -3354,7 +3366,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       panelOnce.classList.remove('active');
       cta.innerHTML = 'Subscribe &amp; Claim Free Gifts — $25';
       cta.href = 'https://us.foursigmatic.com/9dPRr4';
-      cta.onclick = null;
+      cta.onclick = () => fbq('track', 'InitiateCheckout');
     } else {
       tabOnce.classList.add('active');
       tabSub.classList.remove('active');
@@ -3362,7 +3374,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       panelSub.classList.remove('active');
       cta.textContent = 'Buy Once — $54.95';
       cta.href = 'https://us.foursigmatic.com/cart/42124742754340:1';
-      cta.onclick = null;
+      cta.onclick = () => fbq('track', 'InitiateCheckout');
     }
   }
 
