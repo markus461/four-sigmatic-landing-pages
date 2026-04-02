@@ -2395,7 +2395,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <a href="#" class="btn-hero" id="buybox-cta" style="margin-top:16px;" onclick="subscribeCheckout(event)">
+    <a href="https://us.foursigmatic.com/9dPRr4" class="btn-hero" id="buybox-cta" style="margin-top:16px;">
       Subscribe &amp; Claim Free Gifts — $25
     </a>
 
@@ -3309,13 +3309,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="sticky-nav-sep">•</span>
       <span>300M+ cups served</span>
     </div>
-    <a href="#" class="sticky-nav-cta" onclick="subscribeCheckout(event)">Subscribe &amp; Claim Free Gifts — $25</a>
+    <a href="https://us.foursigmatic.com/9dPRr4" class="sticky-nav-cta">Subscribe &amp; Claim Free Gifts — $25</a>
   </div>
 </div>
 
 <!-- Mobile sticky CTA (bottom) -->
 <div class="mobile-cta" id="mobileCta">
-  <a href="#" class="mobile-cta-btn" onclick="subscribeCheckout(event)">Subscribe &amp; Claim Free Gifts — $25</a>
+  <a href="https://us.foursigmatic.com/9dPRr4" class="mobile-cta-btn">Subscribe &amp; Claim Free Gifts — $25</a>
   <div class="mobile-cta-social">
     <span class="mobile-cta-stars">★★★★★</span>
     <span>4.8</span>
@@ -3353,8 +3353,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       panelSub.classList.add('active');
       panelOnce.classList.remove('active');
       cta.innerHTML = 'Subscribe &amp; Claim Free Gifts — $25';
-      cta.href = '#';
-      cta.onclick = (e) => subscribeCheckout(e);
+      cta.href = 'https://us.foursigmatic.com/9dPRr4';
+      cta.onclick = null;
     } else {
       tabOnce.classList.add('active');
       tabSub.classList.remove('active');
@@ -3532,36 +3532,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }, { passive: true });
   })();
 
-  /* ── Subscribe checkout (form POST — handles selling plan + free gifts cross-domain) ── */
-  function subscribeCheckout(e) {
-    e.preventDefault();
-    const form = document.createElement('form');
-    form.method = 'POST';
-    form.action = 'https://us.foursigmatic.com/cart/add';
-    const items = [
-      { id: '42124742754340', quantity: '1', selling_plan: '18234769444' },
-      { id: '43715197829156', quantity: '1' },
-      { id: '39704654479396', quantity: '1' }
-    ];
-    items.forEach((item, i) => {
-      const fields = { [`items[${i}][id]`]: item.id, [`items[${i}][quantity]`]: item.quantity };
-      if (item.selling_plan) fields[`items[${i}][selling_plan]`] = item.selling_plan;
-      Object.entries(fields).forEach(([name, value]) => {
-        const input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = name;
-        input.value = value;
-        form.appendChild(input);
-      });
-    });
-    const returnTo = document.createElement('input');
-    returnTo.type = 'hidden';
-    returnTo.name = 'return_to';
-    returnTo.value = '/checkout';
-    form.appendChild(returnTo);
-    document.body.appendChild(form);
-    form.submit();
-  }
 </script>
 
 </body>
