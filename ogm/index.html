@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<base href="/ogm/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Get 1 Bag of Focus Coffee FREE — Four Sigmatic</title>
 <link rel="icon" type="image/svg+xml" href="Assets/mushroom-icon-orange.svg">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PKF9ZMB');</script>
+<!-- End Google Tag Manager -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Fraunces:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 <style>
@@ -556,7 +562,7 @@
     justify-content: center;
     width: 100%;
     height: 56px;
-    background: var(--orange);
+    background: var(--dark-green);
     color: var(--white);
     font-family: var(--font-ui);
     font-size: 14px;
@@ -570,7 +576,7 @@
     transition: background 0.2s;
     margin-bottom: 12px;
   }
-  .btn-hero:hover { background: #e57200; }
+  .btn-hero:hover { background: #1f4d3a; }
 
   .hero-delivery {
     font-size: 12px;
@@ -681,8 +687,69 @@
     transform: translateY(0);
   }
 
-  /* ── Sticky mobile CTA ── */
-  .mobile-cta { display: none; }
+  /* ── Mobile sticky CTA (bottom) ── */
+  .mobile-cta {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: rgba(249,245,237,0.97);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -2px 20px rgba(89,67,45,0.14);
+    z-index: 50;
+    transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+    transform: translateY(100%);
+  }
+  .mobile-cta.visible { transform: translateY(0); }
+  .mobile-cta-btn {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 52px;
+    background: var(--dark-green); color: var(--white);
+    font-family: var(--font-ui); font-size: 15px; font-weight: 700;
+    border-radius: 44px; text-decoration: none; border: none; cursor: pointer;
+    transition: background 0.2s; margin-bottom: 10px;
+  }
+  .mobile-cta-btn:hover { background: #1f4d3a; }
+  .mobile-cta-social {
+    display: flex; align-items: center; justify-content: center;
+    gap: 6px; font-size: 12px; font-weight: 600; color: var(--tertiary);
+  }
+  .mobile-cta-stars { color: var(--orange); font-size: 13px; letter-spacing: 1px; }
+  .mobile-cta-sep { color: var(--light-brown); font-size: 10px; }
+
+  /* ── Desktop sticky nav (top) ── */
+  .sticky-nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--off-white);
+    border-bottom: 1px solid rgba(89,67,45,0.1);
+    box-shadow: 0 2px 16px rgba(89,67,45,0.1);
+    transform: translateY(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: none;
+  }
+  .sticky-nav.visible { transform: translateY(0); }
+  .sticky-nav-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 48px;
+    height: 64px; display: flex; align-items: center;
+    justify-content: space-between; gap: 24px;
+  }
+  .sticky-nav-logo { height: 28px; flex-shrink: 0; }
+  .sticky-nav-social {
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--font-ui); font-size: 14px; font-weight: 600; color: var(--primary);
+  }
+  .sticky-nav-stars { color: var(--orange); font-size: 15px; letter-spacing: 1px; }
+  .sticky-nav-sep { color: var(--light-brown); }
+  .sticky-nav-cta {
+    flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center;
+    height: 44px; padding: 0 24px;
+    background: var(--dark-green); color: var(--white);
+    font-family: var(--font-ui); font-size: 14px; font-weight: 700;
+    border-radius: 44px; text-decoration: none; white-space: nowrap; transition: background 0.2s;
+  }
+  .sticky-nav-cta:hover { background: #1f4d3a; }
+  @media (min-width: 901px) { .sticky-nav { display: block; } }
+  @media (max-width: 900px) { .mobile-cta { display: block; } }
 
   /* ── Retail bar ── */
   .retail {
@@ -1245,7 +1312,7 @@
     align-items: center;
     height: 56px;
     padding: 0 44px;
-    background: var(--orange);
+    background: var(--dark-green);
     color: var(--white);
     font-family: var(--font-ui);
     font-size: 16px;
@@ -1427,7 +1494,7 @@
     align-items: center;
     height: 58px;
     padding: 0 48px;
-    background: var(--orange);
+    background: var(--dark-green);
     color: var(--white);
     font-family: var(--font-ui);
     font-size: 17px;
@@ -2017,7 +2084,7 @@
   }
 
   @media (max-width: 900px) {
-    .announce { font-size: 11px; padding: 8px 16px; flex-direction: column; gap: 4px; }
+    .announce { font-size: 11px; padding: 8px 16px; flex-direction: column; gap: 4px; position: static; }
     .announce-divider { display: none; }
     .nav { padding: 12px 20px; position: static; justify-content: center; }
     .nav-logo { height: 22px; }
@@ -2125,22 +2192,7 @@
     .footer-logo-wrap { padding: 0 20px 28px; }
     .footer-logo-wrap img { width: 220px !important; height: auto !important; display: block; margin: 0 auto; }
     .footer-bottom { padding: 20px 20px; flex-direction: column; gap: 16px; }
-    .mobile-cta {
-      display: block;
-      position: fixed;
-      bottom: 0; left: 0; right: 0;
-      z-index: 100;
-      padding: 12px 16px env(safe-area-inset-bottom, 12px);
-      background: rgba(249,245,237,0.97);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      box-shadow: 0 -2px 20px rgba(89,67,45,0.12);
-      transform: translateY(100%);
-      transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
-    }
-    .mobile-cta.visible { transform: translateY(0); }
-    .mobile-cta .btn-hero { margin-bottom: 0; font-size: 13px; }
-    body { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
+    body { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
   }
 
   @media (max-width: 380px) {
@@ -2151,6 +2203,10 @@
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKF9ZMB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- Announcement bar -->
 <div class="announce">
@@ -2339,7 +2395,7 @@
       </div>
     </div>
 
-    <a href="https://us.foursigmatic.com/products/mushroom-coffee-with-lions-mane" class="btn-hero" id="buybox-cta" style="margin-top:16px;">
+    <a href="#" class="btn-hero" id="buybox-cta" style="margin-top:16px;" onclick="subscribeCheckout(event)">
       Subscribe &amp; Claim Free Gifts — $25
     </a>
 
@@ -3241,8 +3297,33 @@
   </div>
 </div>
 
+<!-- Desktop sticky nav (top) -->
+<div class="sticky-nav" id="stickyNav">
+  <div class="sticky-nav-inner">
+    <img src="Assets/four-sigmatic-main-logo.svg" alt="Four Sigmatic" class="sticky-nav-logo">
+    <div class="sticky-nav-social">
+      <span class="sticky-nav-stars">★★★★★</span>
+      <span>4.8 stars</span>
+      <span class="sticky-nav-sep">•</span>
+      <span>100K+ reviews</span>
+      <span class="sticky-nav-sep">•</span>
+      <span>300M+ cups served</span>
+    </div>
+    <a href="#" class="sticky-nav-cta" onclick="subscribeCheckout(event)">Subscribe &amp; Claim Free Gifts — $25</a>
+  </div>
+</div>
+
+<!-- Mobile sticky CTA (bottom) -->
 <div class="mobile-cta" id="mobileCta">
-  <a href="https://us.foursigmatic.com/products/mushroom-coffee-with-lions-mane" class="btn-hero">Subscribe &amp; Claim Free Gifts — $25</a>
+  <a href="#" class="mobile-cta-btn" onclick="subscribeCheckout(event)">Subscribe &amp; Claim Free Gifts — $25</a>
+  <div class="mobile-cta-social">
+    <span class="mobile-cta-stars">★★★★★</span>
+    <span>4.8</span>
+    <span class="mobile-cta-sep">•</span>
+    <span>100K+ 5-Star Reviews</span>
+    <span class="mobile-cta-sep">•</span>
+    <span>300M+ Cups Served</span>
+  </div>
 </div>
 
 <script>
@@ -3272,14 +3353,16 @@
       panelSub.classList.add('active');
       panelOnce.classList.remove('active');
       cta.innerHTML = 'Subscribe &amp; Claim Free Gifts — $25';
-      cta.href = 'https://us.foursigmatic.com/products/mushroom-coffee-with-lions-mane';
+      cta.href = '#';
+      cta.onclick = (e) => subscribeCheckout(e);
     } else {
       tabOnce.classList.add('active');
       tabSub.classList.remove('active');
       panelOnce.classList.add('active');
       panelSub.classList.remove('active');
       cta.textContent = 'Buy Once — $54.95';
-      cta.href = 'https://us.foursigmatic.com/products/mushroom-coffee-with-lions-mane';
+      cta.href = 'https://us.foursigmatic.com/cart/42124742754340:1';
+      cta.onclick = null;
     }
   }
 
@@ -3357,13 +3440,16 @@
     wrap.addEventListener('dragstart', e => e.preventDefault());
   })();
 
-  /* ── Sticky mobile CTA ── */
+  /* ── Sticky CTAs (mobile bottom + desktop top) ── */
   (function() {
-    const cta = document.getElementById('mobileCta');
+    const mobileCta = document.getElementById('mobileCta');
+    const desktopNav = document.getElementById('stickyNav');
     const hero = document.querySelector('.hero');
-    if (!cta || !hero) return;
+    if (!hero) return;
     const obs = new IntersectionObserver(entries => {
-      cta.classList.toggle('visible', !entries[0].isIntersecting);
+      const gone = !entries[0].isIntersecting;
+      if (mobileCta) mobileCta.classList.toggle('visible', gone);
+      if (desktopNav) desktopNav.classList.toggle('visible', gone);
     }, { threshold: 0 });
     obs.observe(hero);
   })();
@@ -3445,6 +3531,37 @@
       if (Math.abs(dx) > 40) slideIngredients(dx < 0 ? 1 : -1);
     }, { passive: true });
   })();
+
+  /* ── Subscribe checkout (form POST — handles selling plan + free gifts cross-domain) ── */
+  function subscribeCheckout(e) {
+    e.preventDefault();
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = 'https://us.foursigmatic.com/cart/add';
+    const items = [
+      { id: '42124742754340', quantity: '1', selling_plan: '18234769444' },
+      { id: '43715197829156', quantity: '1' },
+      { id: '39704654479396', quantity: '1' }
+    ];
+    items.forEach((item, i) => {
+      const fields = { [`items[${i}][id]`]: item.id, [`items[${i}][quantity]`]: item.quantity };
+      if (item.selling_plan) fields[`items[${i}][selling_plan]`] = item.selling_plan;
+      Object.entries(fields).forEach(([name, value]) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        input.value = value;
+        form.appendChild(input);
+      });
+    });
+    const returnTo = document.createElement('input');
+    returnTo.type = 'hidden';
+    returnTo.name = 'return_to';
+    returnTo.value = '/checkout';
+    form.appendChild(returnTo);
+    document.body.appendChild(form);
+    form.submit();
+  }
 </script>
 
 </body>
