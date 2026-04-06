@@ -1868,7 +1868,7 @@ fbq('track','PageView');
       </div>
     </div>
 
-    <a href="https://us.foursigmatic.com/products/mushroom-coffee-with-lions-mane" class="btn-hero" id="buybox-cta" style="width:100%;margin-top:16px;">
+    <a href="https://us.foursigmatic.com/9dPRr4" class="btn-hero" id="buybox-cta" style="width:100%;margin-top:16px;" onclick="fbq('track','InitiateCheckout')">
       Subscribe &amp; Claim Free Gifts — $25
     </a>
 
@@ -2590,12 +2590,14 @@ fbq('track','PageView');
       tabSub.classList.add('active'); tabOnce.classList.remove('active');
       panelSub.classList.add('active'); panelOnce.classList.remove('active');
       cta.innerHTML = 'Subscribe &amp; Claim Free Gifts — $25';
-      cta.href = 'https://us.foursigmatic.com/products/mushroom-coffee-with-lions-mane';
+      cta.href = 'https://us.foursigmatic.com/9dPRr4';
+      cta.onclick = () => fbq('track', 'InitiateCheckout');
     } else {
       tabOnce.classList.add('active'); tabSub.classList.remove('active');
       panelOnce.classList.add('active'); panelSub.classList.remove('active');
       cta.textContent = 'Buy Once — $54.95';
-      cta.href = 'https://us.foursigmatic.com/products/mushroom-coffee-with-lions-mane';
+      cta.href = 'https://us.foursigmatic.com/cart/42124742754340:1';
+      cta.onclick = () => fbq('track', 'InitiateCheckout');
     }
   }
 
