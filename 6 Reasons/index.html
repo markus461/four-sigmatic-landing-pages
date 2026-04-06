@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6 Reasons — Four Sigmatic</title>
+<link rel="icon" type="image/svg+xml" href="../../Four Sigmatic Design System/mushroom-icon.svg">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PKF9ZMB');</script>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1161100685848846');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1161100685848846&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NHMMMLZZZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8NHMMMLZZZ');
+</script>
+<!-- End GA4 -->
+<!-- Triple Whale Pixel -->
+<link rel='preconnect dns-prefetch' href='https://api.config-security.com/' crossorigin />
+<link rel='preconnect dns-prefetch' href='https://conf.config-security.com/' crossorigin />
+<script>
+/* >> TriplePixel :: start*/
+window.TriplePixelData={TripleName:"foursigmastore-us.myshopify.com",ver:"2.17",plat:"SHOPIFY",isHeadless:true},function(W,H,A,L,E,_,B,N){function O(U,T,P,H,R){void 0===R&&(R=!1),H=new XMLHttpRequest,P?(H.open("POST",U,!0),H.setRequestHeader("Content-Type","text/plain")):H.open("GET",U,!0),H.send(JSON.stringify(P||{})),H.onreadystatechange=function(){4===H.readyState&&200===H.status?(R=H.responseText,U.includes("/first")?eval(R):P||(N[B]=R)):(299<H.status||H.status<200)&&T&&!R&&(R=!0,O(U,T-1,P))}}if(N=window,!N[H+"sn"]){N[H+"sn"]=1,L=function(){return Date.now().toString(36)+"_"+Math.random().toString(36)};try{A.setItem(H,1+(0|A.getItem(H)||0)),(E=JSON.parse(A.getItem(H+"U")||"[]")).push({u:location.href,r:document.referrer,t:Date.now(),id:L()}),A.setItem(H+"U",JSON.stringify(E))}catch(e){}var i,m,p;A.getItem('"!nC`')||(_=A,A=N,A[H]||(E=A[H]=function(t,e,a){return void 0===a&&(a=[]),"State"==t?E.s:(W=L(),(E._q=E._q||[]).push([W,t,e].concat(a)),W)},E.s="Installed",E._q=[],E.ch=W,B="configSecurityConfModel",N[B]=1,O("https://conf.config-security.com/model",5),i=L(),m=A[atob("c2NyZWVu")],_.setItem("di_pmt_wt",i),p={id:i,action:"profile",avatar:_.getItem("auth-security_rand_salt_"),time:m[atob("d2lkdGg=")]+":"+m[atob("aGVpZ2h0")],host:A.TriplePixelData.TripleName,plat:A.TriplePixelData.plat,url:window.location.href.slice(0,500),ref:document.referrer,ver:A.TriplePixelData.ver},O("https://api.config-security.com/event",5,p),O("https://api.config-security.com/first?host=foursigmastore-us.myshopify.com&plat=SHOPIFY",5)))}}("","TriplePixel",localStorage);
+/* << TriplePixel :: end*/
+</script>
+<!-- End Triple Whale Pixel -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary:    rgb(89,67,45);
+    --tertiary:   rgb(140,102,63);
+    --quaternary: rgb(153,134,115);
+    --off-white:  rgb(249,245,237);
+    --beige:      rgb(242,230,206);
+    --light-brown:rgb(204,187,163);
+    --orange:     #FF8100;
+    --white:      #ffffff;
+    --font-ui:    'Montserrat', sans-serif;
+    --font-serif: 'Fraunces', serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--white); font-family: var(--font-ui); color: var(--primary); }
+
+  /* ── Announcement bar ── */
+  .announce {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding: 10px 16px;
+  }
+  .announce a { color: var(--orange); text-decoration: none; font-weight: 600; }
+
+  /* ── Nav ── */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--white);
+    border-bottom: 1px solid rgba(89,67,45,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 64px;
+  }
+  .nav-logo { height: 32px; }
+  .nav-cta {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 40px; padding: 0 24px; border-radius: 44px;
+    background: var(--orange); color: var(--white);
+    font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+    border: none; cursor: pointer; text-decoration: none;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: #e57200; }
+
+  /* ── Hero ── */
+  .hero {
+    background: var(--off-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 560px;
+    overflow: hidden;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 56px 64px 80px;
+  }
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 16px;
+  }
+  .hero-heading {
+    font-family: var(--font-serif);
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  .hero-heading em { font-style: italic; color: var(--tertiary); }
+  .hero-sub {
+    font-size: 16px;
+    color: var(--quaternary);
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 440px;
+  }
+  .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 52px; padding: 0 32px; border-radius: 44px;
+    background: var(--orange); color: var(--white);
+    font-family: var(--font-ui); font-size: 14px; font-weight: 600;
+    border: none; cursor: pointer; text-decoration: none;
+    transition: background 0.2s;
+  }
+  .btn-primary:hover { background: #e57200; }
+  .btn-secondary {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 52px; padding: 0 32px; border-radius: 44px;
+    background: transparent; color: var(--primary);
+    font-family: var(--font-ui); font-size: 14px; font-weight: 500;
+    border: 1.5px solid var(--primary); cursor: pointer; text-decoration: none;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: var(--primary); color: var(--white); }
+  .hero-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: var(--quaternary);
+  }
+  .hero-stars { color: var(--orange); font-size: 15px; letter-spacing: 1px; }
+  .hero-rating strong { color: var(--primary); }
+  .hero-image {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-image .img-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    background: var(--beige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .img-placeholder-label {
+    font-size: 11px;
+    font-family: monospace;
+    color: var(--light-brown);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* ── Media logos ── */
+  .media-bar {
+    background: var(--white);
+    border-bottom: 1px solid rgba(89,67,45,0.08);
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .media-label {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--light-brown);
+    white-space: nowrap;
+    margin-right: 40px;
+    flex-shrink: 0;
+  }
+  .media-logos {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .media-logo {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--light-brown);
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  /* ── Reasons ── */
+  .reasons { padding: 0; }
+  .reason {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 480px;
+    overflow: hidden;
+  }
+  .reason.reverse .reason-image { order: 2; }
+  .reason.reverse .reason-content { order: 1; }
+  .reason-image .img-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    background: var(--beige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .reason:nth-child(even) .img-placeholder { background: var(--off-white); }
+  .reason-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 72px;
+    background: var(--white);
+  }
+  .reason.reverse .reason-content { background: var(--off-white); }
+  .reason-number {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 12px;
+  }
+  .reason-heading {
+    font-family: var(--font-serif);
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--primary);
+    margin-bottom: 16px;
+  }
+  .reason-heading em { font-style: italic; }
+  .reason-body {
+    font-size: 15px;
+    color: var(--quaternary);
+    line-height: 1.7;
+    margin-bottom: 28px;
+    max-width: 420px;
+  }
+  .reason-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    height: 48px; padding: 0 28px; border-radius: 44px;
+    background: var(--primary); color: var(--white);
+    font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+    border: none; cursor: pointer; text-decoration: none;
+    transition: background 0.2s; align-self: flex-start;
+  }
+  .reason-cta:hover { background: var(--tertiary); }
+  .reason-cta svg { transition: transform 0.2s; }
+  .reason-cta:hover svg { transform: translateX(4px); }
+
+  /* ── Buy box ── */
+  .buy-box {
+    background: var(--off-white);
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .buy-box-image .img-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: var(--beige);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+  }
+  .buy-box-image img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+  }
+  .buy-box-content { display: flex; flex-direction: column; }
+  .buy-box-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--tertiary);
+    margin-bottom: 8px;
+  }
+  .buy-box-name {
+    font-family: var(--font-serif);
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+  .buy-box-name em { font-style: italic; }
+  .buy-box-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--quaternary);
+    margin-bottom: 16px;
+  }
+  .buy-box-stars { color: var(--orange); font-size: 14px; }
+  .buy-box-rating a { color: var(--quaternary); text-decoration: underline; text-underline-offset: 2px; }
+  .buy-box-desc {
+    font-size: 15px;
+    color: var(--primary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .buy-box-desc strong { font-weight: 600; }
+  .buy-box-price-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .buy-box-price { font-size: 36px; font-weight: 700; color: var(--primary); }
+  .buy-box-price-orig { font-size: 22px; font-weight: 400; color: var(--light-brown); text-decoration: line-through; }
+  .buy-box-shipping {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--tertiary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .buy-box-per-serving {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--tertiary);
+    margin-bottom: 24px;
+  }
+  .btn-buy {
+    display: flex; align-items: center; justify-content: center;
+    height: 56px; border-radius: 44px;
+    background: var(--orange); color: var(--white);
+    font-family: var(--font-ui); font-size: 15px; font-weight: 700;
+    border: none; cursor: pointer; text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: background 0.2s;
+    margin-bottom: 20px;
+  }
+  .btn-buy:hover { background: #e57200; }
+  .buy-box-review {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: var(--white);
+    border: 1px solid rgba(89,67,45,0.08);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+  }
+  .buy-box-review-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--beige);
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; color: var(--quaternary);
+  }
+  .buy-box-review-text { font-size: 13px; color: var(--quaternary); line-height: 1.5; }
+  .buy-box-review-text strong { color: var(--primary); font-weight: 600; }
+  .buy-box-trust {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .buy-box-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+  .buy-box-trust-item::before {
+    content: '✓';
+    display: flex; align-items: center; justify-content: center;
+    width: 18px; height: 18px; border-radius: 50%;
+    background: var(--tertiary); color: var(--white);
+    font-size: 10px; font-weight: 700; flex-shrink: 0;
+  }
+  .buy-box-sub-note {
+    font-size: 11px;
+    color: var(--quaternary);
+    line-height: 1.5;
+  }
+
+  /* ── Reviews placeholder ── */
+  .reviews {
+    background: var(--off-white);
+    padding: 80px;
+    text-align: center;
+  }
+  .reviews-heading {
+    font-family: var(--font-serif);
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--primary);
+    margin-bottom: 8px;
+  }
+  .reviews-sub { font-size: 14px; color: var(--quaternary); margin-bottom: 32px; }
+  .reviews-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+  .reviews-tab {
+    height: 36px; padding: 0 20px; border-radius: 44px;
+    font-family: var(--font-ui); font-size: 13px; font-weight: 500;
+    border: 1.5px solid var(--light-brown);
+    background: transparent; color: var(--quaternary);
+    cursor: pointer; transition: all 0.2s;
+  }
+  .reviews-tab.active { background: var(--primary); color: var(--white); border-color: var(--primary); }
+  .reviews-tab:hover:not(.active) { border-color: var(--primary); color: var(--primary); }
+  .reviews-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    text-align: left;
+  }
+  .review-card {
+    background: var(--white);
+    border: 1px solid rgba(89,67,45,0.08);
+    border-radius: 8px;
+    padding: 24px;
+  }
+  .review-stars { color: var(--orange); font-size: 14px; margin-bottom: 10px; }
+  .review-title { font-size: 14px; font-weight: 600; color: var(--primary); margin-bottom: 8px; }
+  .review-body { font-size: 13px; color: var(--quaternary); line-height: 1.6; margin-bottom: 16px; }
+  .review-author { font-size: 12px; font-weight: 600; color: var(--primary); }
+  .review-verified { font-size: 11px; color: var(--quaternary); display: flex; align-items: center; gap: 4px; margin-top: 2px; }
+  .review-verified::before { content: '✓'; color: var(--orange); font-weight: 700; }
+
+  /* ── Trust bar ── */
+  .trust {
+    background: var(--white);
+    border-top: 1px solid rgba(89,67,45,0.08);
+    padding: 32px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+  }
+  .trust-icon { font-size: 24px; }
+  .trust-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary); }
+  .trust-sub { font-size: 11px; color: var(--quaternary); }
+
+  /* ── Footer ── */
+  .footer {
+    background: #0f0f0f;
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-logo { height: 24px; filter: brightness(0) invert(1); opacity: 0.7; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.35); }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a { font-size: 12px; color: rgba(255,255,255,0.4); text-decoration: none; }
+  .footer-links a:hover { color: rgba(255,255,255,0.7); }
+
+  /* ── Placeholder helper ── */
+  .img-placeholder svg { opacity: 0.25; }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    /* Announcement */
+    .announce { font-size: 11px; padding: 8px 16px; }
+
+    /* Nav */
+    .nav { padding: 0 20px; height: 56px; }
+    .nav-logo { height: 26px; }
+    .nav-cta { height: 36px; padding: 0 18px; font-size: 12px; }
+
+    /* Hero */
+    .hero { grid-template-columns: 1fr; }
+    .hero-image { order: -1; }
+    .hero-image .img-placeholder { min-height: 260px; }
+    .hero-content { padding: 36px 20px 40px; }
+    .hero-heading { font-size: 30px; }
+    .hero-sub { font-size: 14px; max-width: 100%; }
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .btn-primary, .btn-secondary { height: 48px; justify-content: center; }
+
+    /* Media logos */
+    .media-bar { padding: 16px 20px; flex-direction: column; align-items: flex-start; gap: 12px; }
+    .media-label { margin-right: 0; }
+    .media-logos { gap: 20px; }
+
+    /* Reasons */
+    .reason { display: flex; flex-direction: column; }
+    .reason-image { order: 0; }
+    .reason-content { order: 1; }
+    .reason-image { width: 100%; }
+    .reason-image .img-placeholder { min-height: 240px; }
+    .reason-content { padding: 36px 20px; }
+    .reason-heading { font-size: 24px; }
+    .reason-body { font-size: 14px; max-width: 100%; }
+    .reason-cta { align-self: stretch; justify-content: center; }
+
+    /* Buy box */
+    .buy-box { grid-template-columns: 1fr; padding: 40px 20px; gap: 28px; }
+    .buy-box-name { font-size: 32px; }
+    .buy-box-price { font-size: 28px; }
+    .buy-box-price-orig { font-size: 18px; }
+
+    /* Reviews */
+    .reviews { padding: 48px 20px; }
+    .reviews-heading { font-size: 26px; }
+    .reviews-tabs { gap: 6px; }
+    .reviews-tab { height: 32px; padding: 0 14px; font-size: 12px; }
+    .reviews-cards { grid-template-columns: 1fr; gap: 12px; }
+
+    /* Trust bar */
+    .trust { padding: 32px 20px; gap: 24px; flex-wrap: wrap; }
+    .trust-item { width: calc(50% - 12px); }
+
+    /* Footer */
+    .footer { padding: 32px 20px; flex-direction: column; align-items: flex-start; gap: 20px; }
+  }
+
+  @media (max-width: 380px) {
+    .hero-heading { font-size: 26px; }
+    .reason-heading { font-size: 22px; }
+    .announce { font-size: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce">
+  Subscribe &amp; save 20% — Free shipping on orders over $40. <a href="#">Shop now →</a>
+</div>
+
+<!-- Nav -->
+<nav class="nav">
+  <img src="../../Four Sigmatic Design System/four-sigmatic-main-logo.svg" alt="Four Sigmatic" class="nav-logo">
+  <a href="#" class="nav-cta">Try it risk-free</a>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Mushrooms Made Smarter™</div>
+    <h1 class="hero-heading">6 reasons why Four Sigmatic is a must-have for <em>focus and mental clarity</em></h1>
+    <div class="hero-rating">
+      <span class="hero-stars">★★★★★</span>
+      <strong>4.8</strong> · Over 100,000 five-star reviews
+    </div>
+    <p class="hero-sub">Backed by clinical research, loved by 300M+ cups worth of customers. Here's why it works — and why you'll never go back to regular coffee.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary">Try it risk-free</a>
+      <a href="#reasons" class="btn-secondary">See the reasons</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="img-placeholder">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#59432D" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <span class="img-placeholder-label">Hero product image</span>
+    </div>
+  </div>
+</section>
+
+<!-- Media logos -->
+<div class="media-bar">
+  <span class="media-label">Featured in</span>
+  <div class="media-logos">
+    <span class="media-logo">Forbes</span>
+    <span class="media-logo">Yahoo Health</span>
+    <span class="media-logo">TastingTable</span>
+    <span class="media-logo">Well+Good</span>
+    <span class="media-logo">Healthline</span>
+  </div>
+</div>
+
+<!-- 6 Reasons -->
+<section class="reasons" id="reasons">
+
+  <!-- Reason 1 -->
+  <div class="reason">
+    <div class="reason-image">
+      <div class="img-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#59432D" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="img-placeholder-label">Reason 1 image</span>
+      </div>
+    </div>
+    <div class="reason-content">
+      <div class="reason-number">Reason 01</div>
+      <h2 class="reason-heading">Stop feeling wired, <em>anxious, or scattered</em></h2>
+      <p class="reason-body">Regular coffee spikes your cortisol and leaves you jittery. Our Focus blend combines Lion's Mane mushroom with clean coffee for calm, sustained energy — no crash, no anxiety, no mid-afternoon slump.</p>
+      <a href="#" class="reason-cta">
+        Try it risk-free
+        <svg width="16" height="12" viewBox="0 0 25 14" fill="none"><path d="M1 7L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 1L23 7L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Reason 2 -->
+  <div class="reason reverse">
+    <div class="reason-image">
+      <div class="img-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#59432D" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="img-placeholder-label">Reason 2 image</span>
+      </div>
+    </div>
+    <div class="reason-content">
+      <div class="reason-number">Reason 02</div>
+      <h2 class="reason-heading">Ditch the brain fog <em>from regular coffee</em></h2>
+      <p class="reason-body">Lion's Mane mushroom has been clinically shown to support cognitive function. In a double-blind study, patients who received Lion's Mane showed significantly higher scores on cognitive function tests — week after week.</p>
+      <a href="#" class="reason-cta">
+        Try it risk-free
+        <svg width="16" height="12" viewBox="0 0 25 14" fill="none"><path d="M1 7L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 1L23 7L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Reason 3 -->
+  <div class="reason">
+    <div class="reason-image">
+      <div class="img-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#59432D" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="img-placeholder-label">Reason 3 image</span>
+      </div>
+    </div>
+    <div class="reason-content">
+      <div class="reason-number">Reason 03</div>
+      <h2 class="reason-heading">Struggling with <em>foggy, chaotic thoughts?</em></h2>
+      <p class="reason-body">When stress takes over, your focus disappears. Our Reishi and Chaga mushroom blends help your body adapt to stress — so your mind stays clear and your thoughts stay sharp, even on the hardest days.</p>
+      <a href="#" class="reason-cta">
+        Try it risk-free
+        <svg width="16" height="12" viewBox="0 0 25 14" fill="none"><path d="M1 7L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 1L23 7L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Reason 4 -->
+  <div class="reason reverse">
+    <div class="reason-image">
+      <div class="img-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#59432D" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="img-placeholder-label">Reason 4 image</span>
+      </div>
+    </div>
+    <div class="reason-content">
+      <div class="reason-number">Reason 04</div>
+      <h2 class="reason-heading">No complicated routine — <em>just your morning cup</em></h2>
+      <p class="reason-body">No pills. No powders to measure. No 13-step supplement stack. Just swap your regular coffee for Four Sigmatic and get the benefits of functional mushrooms built right into the ritual you already have.</p>
+      <a href="#" class="reason-cta">
+        Try it risk-free
+        <svg width="16" height="12" viewBox="0 0 25 14" fill="none"><path d="M1 7L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 1L23 7L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Reason 5 -->
+  <div class="reason">
+    <div class="reason-image">
+      <div class="img-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#59432D" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="img-placeholder-label">Reason 5 image</span>
+      </div>
+    </div>
+    <div class="reason-content">
+      <div class="reason-number">Reason 05</div>
+      <h2 class="reason-heading">Your brain can't focus when <em>your gut isn't happy</em></h2>
+      <p class="reason-body">The gut-brain connection is real. Turkey Tail mushroom supports your microbiome, immune system, and digestion — so your whole body runs better, not just your mind. 9 in 10 customers say they feel the difference.</p>
+      <a href="#" class="reason-cta">
+        Try it risk-free
+        <svg width="16" height="12" viewBox="0 0 25 14" fill="none"><path d="M1 7L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 1L23 7L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Reason 6 -->
+  <div class="reason reverse">
+    <div class="reason-image">
+      <div class="img-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#59432D" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="img-placeholder-label">Reason 6 image</span>
+      </div>
+    </div>
+    <div class="reason-content">
+      <div class="reason-number">Reason 06</div>
+      <h2 class="reason-heading">Avoid the jitters <em>and the crash</em></h2>
+      <p class="reason-body">Half the caffeine of regular coffee, combined with adaptogenic mushrooms that help regulate your energy levels naturally. You get the focus and clarity you need — without the 2pm crash that kills your afternoon.</p>
+      <a href="#" class="reason-cta">
+        Try it risk-free
+        <svg width="16" height="12" viewBox="0 0 25 14" fill="none"><path d="M1 7L22 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 1L23 7L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+</section>
+
+<!-- Buy box -->
+<section class="buy-box">
+  <div class="buy-box-image">
+    <div class="img-placeholder">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#59432D" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <span class="img-placeholder-label">Product image</span>
+    </div>
+  </div>
+  <div class="buy-box-content">
+    <div class="buy-box-eyebrow">Focus Starter Kit</div>
+    <h2 class="buy-box-name">Think Organic<br><em>Mushroom Coffee</em></h2>
+    <div class="buy-box-rating">
+      <span class="buy-box-stars">★★★★★</span>
+      <a href="#">100,554 Reviews</a>
+    </div>
+    <p class="buy-box-desc">
+      <strong>Get 30 servings of Lion's Mane Coffee and unlock free gifts.</strong><br>
+      Four Sigmatic is a mushroom coffee blend that helps boost energy, improve mental clarity, and supports gut health.
+    </p>
+    <div class="buy-box-price-row">
+      <span class="buy-box-price">$17.99</span>
+      <span class="buy-box-price-orig">$29.99</span>
+      <span class="buy-box-shipping">Free U.S. Shipping</span>
+    </div>
+    <div class="buy-box-per-serving">Only $0.60 per serving!</div>
+    <a href="https://us.foursigmatic.com/discount/THOMASFREE?redirect=/cart/7981610631204:1" class="btn-buy">Try it risk-free →</a>
+    <div class="buy-box-review">
+      <div class="buy-box-review-avatar">J</div>
+      <div class="buy-box-review-text">
+        "I love Four Sigmatic — it helps me focus and get more done with a lot less brain fog and no caffeine crashes!"<br>
+        <strong>Julieta C.</strong>
+      </div>
+    </div>
+    <div class="buy-box-trust">
+      <div class="buy-box-trust-item">Subscribe &amp; save 20% — ships every 30 days</div>
+      <div class="buy-box-trust-item">Skip, pause or cancel anytime</div>
+      <div class="buy-box-trust-item">Free avg. 3-day shipping today</div>
+    </div>
+    <p class="buy-box-sub-note">3 days before your next shipment we'll email you a reminder. You can easily adjust or cancel at any time.</p>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews">
+  <h2 class="reviews-heading">Join 200,000+ coffee lovers</h2>
+  <p class="reviews-sub">Real customers. Real results.</p>
+  <div class="reviews-tabs">
+    <button class="reviews-tab active" onclick="setTab(this)">Taste</button>
+    <button class="reviews-tab" onclick="setTab(this)">Focus</button>
+    <button class="reviews-tab" onclick="setTab(this)">Gut Health</button>
+    <button class="reviews-tab" onclick="setTab(this)">Energy</button>
+    <button class="reviews-tab" onclick="setTab(this)">vs. Coffee</button>
+    <button class="reviews-tab" onclick="setTab(this)">vs. Mushroom Coffee</button>
+  </div>
+  <div class="reviews-cards">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-title">It's delicious!!</div>
+      <p class="review-body">I've tried many mushroom coffees and nothing compares. Smooth, rich, and I actually feel focused without the jitters. This is my morning now.</p>
+      <div class="review-author">Julieta C.</div>
+      <div class="review-verified">Verified Buyer</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-title">Finally a healthy blend that works</div>
+      <p class="review-body">I was skeptical but after two weeks I noticed I wasn't getting my usual afternoon brain fog. My focus during work calls is noticeably better.</p>
+      <div class="review-author">Judith J.</div>
+      <div class="review-verified">Verified Buyer</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-title">Easy to make, great taste</div>
+      <p class="review-body">As a big coffee drinker I wasn't sure I'd like mushroom coffee. But Four Sigmatic changed my perspective — especially over ice with almond milk.</p>
+      <div class="review-author">Lindsay H.</div>
+      <div class="review-verified">Verified Buyer</div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust bar -->
+<div class="trust">
+  <div class="trust-item">
+    <span class="trust-icon">🍄</span>
+    <span class="trust-label">Real mushrooms</span>
+    <span class="trust-sub">Fruiting bodies only</span>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">🌿</span>
+    <span class="trust-label">USDA Organic</span>
+    <span class="trust-sub">Certified & tested</span>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">🔬</span>
+    <span class="trust-label">3rd party tested</span>
+    <span class="trust-sub">For toxins & purity</span>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">↩️</span>
+    <span class="trust-label">Risk-free guarantee</span>
+    <span class="trust-sub">Love it or your money back</span>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <img src="../../Four Sigmatic Design System/four-sigmatic-main-logo.svg" alt="Four Sigmatic" class="footer-logo">
+  <span class="footer-copy">© 2025 Four Sigmatic. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+<script>
+  function setTab(el) {
+    document.querySelectorAll('.reviews-tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    // Review content swap will go here when real reviews are added
+  }
+</script>
+
+</body>
+</html>

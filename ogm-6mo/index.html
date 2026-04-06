@@ -33,6 +33,15 @@ fbq('track','PageView');
   gtag('config', 'G-8NHMMMLZZZ');
 </script>
 <!-- End GA4 -->
+<!-- Triple Whale Pixel -->
+<link rel='preconnect dns-prefetch' href='https://api.config-security.com/' crossorigin />
+<link rel='preconnect dns-prefetch' href='https://conf.config-security.com/' crossorigin />
+<script>
+/* >> TriplePixel :: start*/
+window.TriplePixelData={TripleName:"foursigmastore-us.myshopify.com",ver:"2.17",plat:"SHOPIFY",isHeadless:true},function(W,H,A,L,E,_,B,N){function O(U,T,P,H,R){void 0===R&&(R=!1),H=new XMLHttpRequest,P?(H.open("POST",U,!0),H.setRequestHeader("Content-Type","text/plain")):H.open("GET",U,!0),H.send(JSON.stringify(P||{})),H.onreadystatechange=function(){4===H.readyState&&200===H.status?(R=H.responseText,U.includes("/first")?eval(R):P||(N[B]=R)):(299<H.status||H.status<200)&&T&&!R&&(R=!0,O(U,T-1,P))}}if(N=window,!N[H+"sn"]){N[H+"sn"]=1,L=function(){return Date.now().toString(36)+"_"+Math.random().toString(36)};try{A.setItem(H,1+(0|A.getItem(H)||0)),(E=JSON.parse(A.getItem(H+"U")||"[]")).push({u:location.href,r:document.referrer,t:Date.now(),id:L()}),A.setItem(H+"U",JSON.stringify(E))}catch(e){}var i,m,p;A.getItem('"!nC`')||(_=A,A=N,A[H]||(E=A[H]=function(t,e,a){return void 0===a&&(a=[]),"State"==t?E.s:(W=L(),(E._q=E._q||[]).push([W,t,e].concat(a)),W)},E.s="Installed",E._q=[],E.ch=W,B="configSecurityConfModel",N[B]=1,O("https://conf.config-security.com/model",5),i=L(),m=A[atob("c2NyZWVu")],_.setItem("di_pmt_wt",i),p={id:i,action:"profile",avatar:_.getItem("auth-security_rand_salt_"),time:m[atob("d2lkdGg=")]+":"+m[atob("aGVpZ2h0")],host:A.TriplePixelData.TripleName,plat:A.TriplePixelData.plat,url:window.location.href.slice(0,500),ref:document.referrer,ver:A.TriplePixelData.ver},O("https://api.config-security.com/event",5,p),O("https://api.config-security.com/first?host=foursigmastore-us.myshopify.com&plat=SHOPIFY",5)))}}("","TriplePixel",localStorage);
+/* << TriplePixel :: end*/
+</script>
+<!-- End Triple Whale Pixel -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Fraunces:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 <style>
@@ -2471,7 +2480,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <a href="https://us.foursigmatic.com/cart/42124742754340:6?discount=6MOCODE" class="btn-hero" id="buybox-cta" style="margin-top:16px;" onclick="fbq('track','InitiateCheckout')">
+    <a href="https://us.foursigmatic.com/cart/42124742754340:6?discount=6MOCODE" class="btn-hero" id="buybox-cta" style="margin-top:16px;" onclick="fbq('track','InitiateCheckout'); TriplePixel('AddToCart', {item: '4428522618989', q: 1, v: '9898162258244'});">
       Get My 6-Month Supply — $150
     </a>
 
@@ -3389,13 +3398,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="sticky-nav-sep">•</span>
       <span>300M+ cups served</span>
     </div>
-    <a href="https://us.foursigmatic.com/cart/42124742754340:6?discount=6MOCODE" class="sticky-nav-cta" onclick="fbq('track','InitiateCheckout')">Get 6-Month Supply — $150</a>
+    <a href="https://us.foursigmatic.com/cart/42124742754340:6?discount=6MOCODE" class="sticky-nav-cta" onclick="fbq('track','InitiateCheckout'); TriplePixel('AddToCart', {item: '4428522618989', q: 1, v: '9898162258244'});">Get 6-Month Supply — $150</a>
   </div>
 </div>
 
 <!-- Mobile sticky CTA (bottom) -->
 <div class="mobile-cta" id="mobileCta">
-  <a href="https://us.foursigmatic.com/cart/42124742754340:6?discount=6MOCODE" class="mobile-cta-btn" onclick="fbq('track','InitiateCheckout')">Get My 6-Month Supply — $150</a>
+  <a href="https://us.foursigmatic.com/cart/42124742754340:6?discount=6MOCODE" class="mobile-cta-btn" onclick="fbq('track','InitiateCheckout'); TriplePixel('AddToCart', {item: '4428522618989', q: 1, v: '9898162258244'});">Get My 6-Month Supply — $150</a>
   <div class="mobile-cta-social">
     <span class="mobile-cta-stars">★★★★★</span>
     <span>4.8</span>
@@ -3445,7 +3454,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       dotSub.classList.remove('active');
       cta.textContent = 'Buy Once — $50.00';
       cta.href = 'https://us.foursigmatic.com/cart/42124742754340:1';
-      cta.onclick = () => fbq('track', 'InitiateCheckout');
+      cta.onclick = () => { fbq('track', 'InitiateCheckout'); TriplePixel('AddToCart', {item: '4428522618989', q: 1, v: '9898162258244'}); };
       if (strip) strip.style.display = 'none';
       document.querySelector('.hero-fine').style.display = 'none';
     }
